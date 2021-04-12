@@ -19,4 +19,254 @@ Intégration de la police "raleway"
     font-weight: normal;
     font-style: normal;
 
+
+/* balises générales */
+
+
+body {
+    margin: 0px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    font-size: 1em
+}
+
+* {
+    font-family: "Raleway", "Sans serif";
+    list-style: none;
+    /*border:1px solid #F34607 */
+}
+
+
+
+
+
+
+
+
+
+
+/*
+Logo et NAV
+*/
+
+header nav .navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.menu1 li.activite {
+    margin-top: 5px !important;
+}
+
+.sinscrire {
+    margin-top: 5px;
+}
+
+.hebergement {
+    text-align: center;
+    border-bottom: 3px solid #0065FC;
+    border-top: 0px solid #0065FC;
+    margin: 15px 0;
+}
+
+
+
+
+
+header nav .navigation nav,
+header nav .navigation nav ul {
+    flex-direction: row;
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+
+header nav .navigation nav ul li:first-child,
+header nav .navigation nav a.sinscrire {
+    color: #0065FC;
+    margin-bottom: 0px;
+}
+
+header {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 2.5%;
+    padding: 0;
+}
+
+
+
+.menu1 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hebergement,
+.activite {
+    order: 2;
+    flex: 0 1
+}
+
+.nav-sinscrire {
+    order: 1;
+    flex: 0 1 100%;
+}
+
+
+/*
+Zone recherche
+*/
+
+.rechercheetfiltre h1 {
+    margin: 15px 0 0 0;
+    display: flex;
+    flex-direction: column;
+}
+
+form.recherche button[type="none"] {
+    background: #F2F2F2;
+    border: 1px #F2F2F2 solid;
+    padding: 5px 15px;
+    font-size: 20px;
+    border-radius: 15px 0 0 15px;
+    padding-top: 7px;
+    padding-bottom: 10px;
+}
+
+form.recherche button[type="submit"] {
+    display: flex;
+    background: #0065FC;
+    border: 1px #0065FC solid;
+    border-radius: 0 15px 15px 0;
+    color: #FFF;
+    height: 43px;
+    padding: 0px 15px;
+}
+
+
+form.recherche {
+    display: flex;
+    text-align: inherit;
+}
+
+
+form.rechercheinput {
+    background: transparent;
+    border: 1px #F2F2F2 solid;
+    padding: 11px 5vw;
+    margin-left: -4px;
+    height: 20px;
+}
+
+
+/*
+Filtres
+*/
+
+.bouton p {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.filtres {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+}
+
+.filtres,
+.filtres .content {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.filtres .title {
+    margin-bottom: 20px;
+    padding-top: inherit;
+    padding-right: 20px;
+}
+
+.filtres .bouton {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 200px;
+    border: 2px #F2F2F2 solid;
+    height: 50px;
+    position: relative;
+    padding-left: 55px;
+    padding-right: 14px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    transition: transform .2s;
+    cursor: pointer;
+}
+
+.filtres .bouton:hover {
+    transform: scale(1.05);
+}
+
+.filtres .bouton:first-child {
+    margin-left: 0;
+}
+
+.filtres .bouton:last-child {
+    margin-right: 0;
+}
+
+.filtres .bouton i {
+    line-height: 50px;
+    color: #0065FC;
+    position: absolute;
+    width: 50px;
+    text-align: center;
+    background: #DEEBFF;
+    left: -2px;
+    border-radius: 100%;
+}
+
+.bouton p {
+    margin: auto;
+}
+
+.nbrlgmt {
+    padding: 5px 0;
+    display: inline-flex;
+}
+
+.nbrlgmt i {
+    border: 2px solid #F2F2F2;
+    width: 29px;
+    line-height: 25px;
+    font-size: 14px;
+    color: #0065FC;
+    text-align: center;
+    border-radius: 100%;
+    margin-right: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 29px;
+}
+
+p.nbrlgmt {
+    margin: auto;
+    padding-left: 3px;
+}
+
+
+
+
 }
