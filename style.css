@@ -306,12 +306,12 @@ ul.listapuce {
     color: black;
 }
 
-/* partie MAIN avec 3 SECTIONS */
+/* MAIN avec 2 SECTIONS */
 
 
-/* SECTION hebergemennts */
+/* SECTION 1 : " Hebergement à Marseille" et "les plus populaires" */
 
-.LesPlusPopulaires .fastar {
+.leplupop .fastar {
     position: absolute;
     bottom: 5%;
 }
@@ -336,7 +336,7 @@ figure:hover {
 }
 
 
-#hebermars{
+#hebermars .leplupop {
     order: 2;
     flex: 0 1 35%;
 }
@@ -353,7 +353,7 @@ figure:hover {
 
 
 
-#hebermars .heberbackground .blockfigure {
+#hebermars .heberbackground .groupdefigures {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -361,7 +361,7 @@ figure:hover {
 }
 
 
-#hebermars .heberbackground .blockfigure figure {
+#hebermars .heberbackground .groupdefigures figure {
     width: calc(100% / 3.3);
     background: #FFF;
     padding: 0.3rem;
@@ -374,30 +374,30 @@ figure:hover {
 
 
 
-#hebermars .heberbackground .blockfigure figure figcaption {
+#hebermars .heberbackground .groupdefigures figure figcaption {
     padding: 10px;
     position: relative;
 }
 
-#hebermars .heberbackground .blockfigure figure figcaption p {
+#hebermars .heberbackground .groupdefigures figure figcaption p {
     margin: 0;
 }
 
-#hebermars .heberbackground .blockfigure figure figcaption p:first-child {
+#hebermars .heberbackground .groupdefigures figure figcaption p:first-child {
     font-size: 14px;
 }
 
-#hebermars .heberbackground .blockfigure figure figcaption p:nth-child(2) {
+#hebermars .heberbackground .groupdefigures figure figcaption p:nth-child(2) {
     font-size: 12px;
     margin: 5px 0;
 }
 
-#hebermars .heberbackground .blockfigure figure figcaption i {
+#hebermars .heberbackground .groupdefigures figure figcaption i {
     color: #0065FC;
     font-size: 12px;
 }
 
-#hebermars .heberbackground .blockfigure figure img {
+#hebermars .heberbackground .groupdefigures figure img {
     height: 7rem;
     object-fit: cover;
     max-width: 100%;
@@ -406,17 +406,17 @@ figure:hover {
     border-radius: 1rem 1rem 0 0;
 }
 
-#hebermars .LesPlusPopulaires .blockfigure {
+#hebermars .leplupop .groupdefigures {
     flex-direction: column;
 }
 
-#hebermars .LesPlusPopulaires .blockfigure figure {
+#hebermars .leplupop .groupdefigures figure {
     width: auto;
     display: flex;
     flex-direction: row;
 }
 
-#hebermars .LesPlusPopulaires .blockfigure figure img {
+#hebermars .leplupop .groupdefigures figure img {
     max-width: 100px;
     max-height: initial;
     height: 115px;
@@ -424,7 +424,7 @@ figure:hover {
 }
 
 #hebermars h1,
-#hebergement {
+#hebermars .fachart {
     display: flex;
     justify-content: space-between;
 }
