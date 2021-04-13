@@ -434,3 +434,72 @@ figure:hover {
 }
 
 
+/*SECTION : "Activités à Marseille"*/
+
+#activmars {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+    max-width: 1350px;
+}
+
+.activmarstitle {
+    margin-bottom: 27px;
+    font-size: large;
+}
+
+.groupvignett {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.vignetdouble {
+    display: flex;
+    flex-direction: column;
+}
+
+.vignet {
+    box-shadow: 0 0 20px #0000002e;
+    padding: 0px 0px 20px 0px;
+    border-radius: 20px;
+    margin: 0px 0px 20px 0px;
+}
+
+.divimage {
+    background-size: 100% 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 0px 0px 22px 0px;
+}
+
+.photo_activite11,
+.photo_activite22,
+.photo_activite33,
+.photo_activite44,
+.photo_activite55,
+.photo_activite66 {
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#activmars h1 {
+    font-size: large;
+}
+
+#activmars h2 {
+    font-size: medium;
+}
+
+
+.
+
+
+
+
+
+
