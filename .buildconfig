@@ -1,0 +1,10 @@
+[default]
+name=Default
+runtime=host
+config-opts=
+run-opts=
+prefix=/home/charbonnier/.cache/gnome-builder/install/FrancoisCharbonnier_2_06042021/host
+app-id=
+postbuild=
+prebuild=
+default=true
