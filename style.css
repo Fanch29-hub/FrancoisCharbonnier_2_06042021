@@ -572,6 +572,209 @@ ul.listapuce {
         justify-content: flex-start;
     }
 
+
+/* responsive tablette */
+/* responsive général */
+@media(min-width: 992px) {
+    .hebergement {
+        text-align: center;
+        border-top: 3px solid #0065FC;
+        border-bottom: 0px solid #0065FC;
+        margin: 15px 0;
+    }
+}
+
+@media(max-width: 992px) {
+    .nav {
+        padding: 0;
+        position: relative;
+        padding-bottom: 56px;
+    }
+    .activite {
+        text-align: center;
+        border-bottom: 3px solid #99999960;
+        min-width: 50%;
+        margin: auto 0;
+        padding: 15px 0;
+    }
+    .hebergement {
+        text-align: center;
+        padding: 15px 0;
+        margin: inherit;
+        min-width: 50%;
+        margin: auto 0;
+    }
+    @media(max-width: 992px) {
+        .hebergement {}
+    }
+    .menu1 {
+        position: absolute;
+        width: 110%;
+        bottom: 0;
+        left: 0;
+        justify-content: space-between;
+        align-content: center;
+        margin-left: -5%;
+    }
+    .sinscrire {
+        margin-left: -34%;
+    }
+    header .main-container .navigation nav ul {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+@media(min-width: 992px) {
+    header .main-container .navigation nav ul li {
+        margin: 0 20px;
+        padding-top: 20px;
+    }
+}
+
+@media(min-width: 992px) {
+    header .main-container .navigation nav ul li {
+        padding-top: 20px;
+    }
+}
+
+
+@media(min-width: 992px) {
+    header .main-container .navigation nav,
+    header .main-container .navigation nav ul {
+        margin-top: 0px;
+        flex-direction: row;
+        list-style: none;
+        display: flex;
+        flex-flow: row wrap;
+    }
+}
+
+/* responsive SECTION 2 */
+@media all and (max-width : 992px) {
+
+
+
+        #activmars {
+            margin-left: 50px;
+        }
+
+    }
+
+    @media all and (max-width : 992px) {
+
+        .vignetdoubl1,
+	      .vignetdoubl2 {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+
+    @media all and (max-width : 992px) {
+
+
+        #activmars {
+            margin-left: 0px;
+        }
+
+
+        .vignet1,
+        .vignet2,
+        .vignet3,
+        .vignet4,
+        .vignet5,
+        .vignet6 {
+            box-shadow: 0 0 20px #0000002e;
+        }
+
+
+
+
+        .vignet1,
+        .vignet2,
+        .vignet3,
+        .vignet4,
+        .vignet5,
+        .vignet6 {
+            width: 340px;
+        }
+
+        .groupvignett {
+            padding-left: 15px;
+        }
+
+        .divimagepic1,
+        .divimagepic2,
+        .divimagepic3,
+        .divimagepic4,
+        .divimagepic5,
+        .divimagepic6 {
+            width: 330px;
+            margin-left: 5px;
+            margin-top: 5px;
+        }
+
+        .groupvignett {
+            justify-content: center;
+            align-items: center;
+        }
+
+
+
+        .vignet1,
+        .vignet2,
+        .vignet3,
+        .vignet4,
+        .vignet5,
+        .vignet6 {
+            border-color: white;
+            max-width: 375px;
+            margin-left: 10px;
+        }
+
+
+
+        .vignetdoubl1,
+	      .vignetdoubl2 {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .groupvignett {
+            flex-direction: column;
+        }
+
+        .activmarstitle {
+            margin-left: 60px;
+        }
+
+
+
+        .activite6 {
+            margin-bottom: 0px;
+        }
+
+
+       .activtitle1,
+       .activtitle2,
+       .activtitle3,
+       .activtitle4,
+       .activtitle5,
+       .activtitle6 {
+            margin-left: 15px;
+        }
+
+
+
+    }
+
+
+
+
+
+
+
 /* responsive smartphone */
 /* responsive général */
 @media (max-width:768px) {
