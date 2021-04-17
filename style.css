@@ -572,7 +572,192 @@ ul.listapuce {
         justify-content: flex-start;
     }
 
+/* responsive smartphone */
+/* responsive général */
+@media (max-width:768px) {
+    .container {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+}
 
+/* responsive HEADER */
+@media (max-width:768px) {
+    header {
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 2.5%;
+    }
+}
+@media (max-width:768px) {
+    .rechercheetfiltre .container {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+}
+@media (max-width:768px) {
+    form.recherche button[type="submit"] {
+        border-radius: 15px 15px 15px 15px !important;
+        margin-left: -15px !important;
+    }
+}
+
+@media (max-width:768px) {
+    p.text1 {
+        display: none;
+    }
+}
+
+@media (min-width:768px) {
+    p.text2 {
+        display: none;
+    }
+}
+
+
+
+@media (max-width:768px) {
+    form.recherche {
+        display: flex;
+        text-align: center !important;
+    }
+}
+
+/* responsive SECTION 1 et 2 */
+@media (max-width:768px) {
+    #hebermars .classicmars {
+        order: 1;
+        flex: 1;
+        margin-right: 0%;
+    }
+}
+
+
+@media (max-width:768px) {
+    #hebermars .leplupop {
+        order: 0;
+        flex: 0 1 100%;
+    }
+}
+
+
+
+@media (max-width:768px) {
+    #hebermars .heberbackground {
+        background: #F2F2F2;
+        border-radius: 0px !important;
+        padding: 30px 25px;
+        min-height: 519px;
+        margin-bottom: 0px;
+    }
+}
+
+
+@media (max-width:768px) {
+    #hebermars .heberbackground .groupdefigures {
+        flex-direction: column;
+    }
+}
+
+@media (max-width:768px) {
+    .classicmars .heberbackground {
+        background: white !important;
+    }
+}
+
+@media (max-width:768px) {
+    #hebermars .heberbackground {
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width:768px) {
+    #hebermars .heberbackground .groupdefigures figure {
+        transform: scale(1.05);
+        width: auto;
+    }
+}
+
+@media all and (max-width : 768px) {
+        #activmars {
+            margin-left: 50px;
+        }
+
+        .activmarstitle {
+            margin-left: 12px;
+        }
+
+
+
+        .vignet1,
+        .vignet2,
+        .vignet3,
+        .vignet4,
+        .vignet5,
+        .vignet6 {
+            margin-left: -10px;
+        }
+
+        .groupvignett {
+            padding-left: 0px;
+        }
+
+
+
+        .divimagepic1,
+        .divimagepic2,
+        .divimagepic3,
+        .divimagepic4,
+        .divimagepic5,
+        .divimagepic6 {
+            width: 260px;
+        }
+
+        .vignet1,
+        .vignet2,
+        .vignet3,
+        .vignet4,
+        .vignet5,
+        .vignet6 {
+            max-width: 270px;
+        }
+
+        #activmars {
+            margin-left: 30px;
+        }
+
+        .activmarstitle {
+            margin-left: 20px;
+        }
+
+
+
+    }
+
+    @media all and (max-width : 768px) {
+
+        #activmars {
+            margin-left: 40px;
+        }
+
+        .activmarstitle {
+            margin-left: 0px;
+        }
+
+
+
+    }
+
+
+}
+
+    /* responsive FOOTER */
+    @media (max-width:768px) {
+    footer {
+        flex-flow: row wrap;
+    }
+    }
 
 }
 
