@@ -13,53 +13,36 @@
 	<meta name="description" content="RESERVIA, trouvez votre hébergement pour des vacances de rêve!" />
 	<!-- balise pour ajouter les icones de fontawesome -->
 	<script src="https://kit.fontawesome.com/2f75277f0d.js" crossorigin="anonymous"></script>
-</head>
+	</head>
     <body>
-        
-
-
-
-
-
-
-        <!-- HEADER ) -->
-        <header>
-				
-				<!-- NAV dans le HEADER ) -->
-            <nav>
+        <!-- EN TÊTE ( header ) -->
+        <header id="header">
+            <nav>>
                 <div class="navigation">
                     <div class="logo">
-                        <a href="#" class="logo"><img src="images/logo/Reservia.svg" alt="Reservia" /></a>
+                        <a href="#" class="reservia"><img src="images/logo/Reservia.svg" alt="logo_Reservia" /></a>
                     </div>
-
-
-
                     <nav>
                         <ul>
                             <div class="menu1">
-                                <li class="hebergement"><a href="#hebergement">Hébergements</a></li>
-                                <li class="activite"><a href="#activites">Activités</a></li>
+                                <li class="hebergement"><a href="#hebermars">Hébergements</a></li>
+                                <li class="activite"><a href="#activmars">Activités</a></li>
                             </div>
                             <div class="sinscrire">
-                                <li class="sincrire"><a href="#" class="sinscrire"><strong>S'inscrire</strong></a></li>
+                                <li class="inscription"><a href="#" class="sinscrire"><strong>S'inscrire</strong></a></li>
                             </div>
                         </ul>
                     </nav>
-                    
                 </div>
             </nav>
-
-
-            <!-- reste du HEADER )-->    
-            <div class="rechercheetfiltre container">
-            
-            
-            <!-- titre sous titre et zone "recherche" )-->    
-                <div class="recherche">
+            <!-- Zone de recherche ( bouton & filtres )-->    
+            <div class="rechercheetfiltre">
+                <!-- bouton de recherche  -->
+               <div class="searchbar">
                     <h1>Trouvez votre hébérgement pour des vacances de rêve</h1>
                     <p>En plein centre ville ou en pleine nature</p>
                     <div>
-                        <form class="recherche" action="/mon-action.php">
+                        <form class="searchbar" action="/mon-action.php">
                             <button type="none"><i class="fas fa-map-marker-alt"></i></button>
                             <input type="text" name="recherche" placeholder="Marseille, France" name="location-search">                    
                             <button type="submit">
@@ -69,53 +52,41 @@
                         </form>
                     </div>
                 </div>
-
-
                 <!-- filtres -->
-                <div class="filtres">
-                    <b class="title">Filtres</b>
-                    <div class="content">
-                        <div class=bouton>
+                <div class="formfilter">
+                    <b class="formtitre">Filtres</b>
+                    <div class="formcontenu">
+                        <div class=button>
                             <i class="fa fa-money-bill-wave"></i>
                             <p>Economique</p>
                         </div>
-                        <div class=bouton>
+                        <div class=button>
                             <i class="fa fa-child"></i>
                             <p>Famillial</p>
                         </div>
-                        <div class=bouton>
+                        <div class=button>
                             <i class="fa fa-heart"></i>
                             <p>Romantique</p>
                         </div>
-                        <div class=bouton>
+                        <div class=button>
                             <i class="fa fa-dog"></i>
                             <p>Animaux autorisés</p>
                         </div>
                     </div>
                 </div>
-
-
                 <div class="nbrlgmt">
                     <p><i class="fas fa-info"></i> 
-                    <p class="nbrlgmt"> Plus de 500 logements sont disponibles dans cette ville</p>
+                    <p class="nbrl"> Plus de 500 logements sont disponibles dans cette ville</p>
                 </div>
-
-
             </div>
-
         </header>
-
-
-
-
-
-<!-- MAIN avec 2 SECTIONS -->
-        <!-- SECTION 1 partie 1 : " Hebergement à Marseille" -->
+        <!-- reservation -->
+        <!-- Zone " Hebergement à Marseille -->
         <main>
             <section id="hebermars">
                 <div class="resermars">
                     <div class="classicmars">
-                        <div class="heberbackground">
+                        <div class="pickbackground">
                             <h1>Hebergements à Marseille</h1>
                             <div class="groupdefigures">
                                 <figure>
@@ -194,9 +165,9 @@
                             <strong>Afficher plus</strong>
                         </div>
                     </div>
-                    <!-- SECTION 1 partie 2 : " Les plus populaires -->
+                    <!-- Zone " Les plus populaires -->
                     <div class="leplupop">
-                        <div class="heberbackground">
+                        <div class="pickbackground">
                             <h1>
                                 <p>Les plus populaires</p>
                                 <div class="fachart"><i class="fas fa-chart-line"></i></div>
@@ -243,111 +214,101 @@
                     </div>
                 </div>
             </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!--SECTION : "Activités à Marseille"-->
-
-<div id="activmars">
-    <h1 class="activmarstitle">Activités à Marseille</h1>
-    <div class="groupvignett">
-        <div class="vignet1">
-            <a href="#">
-                <div class="divimage1">
-                    <img class="divimagepic1"
-                        src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
-                        alt="Photohebergement" />
+            <!-- Zone " Activités à Marseille -->
+            <section id="activmars">
+                <div class="activmarsection">
+                    <div class="pickbackground">
+                        <h1>Activités à Marseille</h1>
+                        <ul class="groupvignett">
+                            <div class="groupdefigures">
+                                <div class="vignet">
+                                    <div class="figure">
+                                        <div class="divimage"><img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="">
+                                        </div>
+                                        <div class="didvtext">
+                                            <p>
+                                                <strong>
+                                                Vieux Port
+                                                </strong>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="vignetdoubl">
+                                    <div class="figure">
+                                        <div class="divimage">
+                                            <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="">
+                                            <div class="adescript">
+                                                <p>
+                                                    <strong>
+                                                    Fort de Pomègues
+                                                    </strong>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="figure">
+                                        <div class="divimage">
+                                            <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="">
+                                            <div class="adescript">
+                                                <p>
+                                                    <strong>
+                                                    îles du Frioul
+                                                    </strong>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="groupdefigures">
+                                <div class="vignet">
+                                    <div class="figure">
+                                        <div class="divimage"><img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="">
+                                        </div>
+                                        <div class="didvtext">
+                                            <p>
+                                                <strong>
+                                                Parc National des Calanques
+                                                </strong>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="vignetdoubl">
+                                    <div class="figure">
+                                        <div class="divimage">
+                                            <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="">
+                                            <div class="adescript">
+                                                <p>
+                                                    <strong>
+                                                    Notre-Dame-de-la-Garde
+                                                    </strong>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="figure">
+                                        <div class="divimage">
+                                            <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="">
+                                            <div class="adescript">
+                                                <p>
+                                                    <strong>
+                                                    Parc LongChamp
+                                                    </strong>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
                 </div>
-                <div class="activmarstitle1">
-                    <h2>Vieux Port</h2>
+                </ul>
                 </div>
-            </a>
-        </div>
-        <div class="vignetdoubl1">
-            <div class="vignet2">
-                <a href="#">
-                    <div class="divimage2">
-                        <img class="divimagepic2"
-                            src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
-                            alt="Photohebergement" />
-                    </div>
-                    <div class="activmarstitle2">
-                        <h2>Fort de Pomègues</h2>
-                    </div>
-                </a>
-            </div>
-            <div class="vignet3">
-                <a href="#">
-                    <div class="divimage3">
-                        <img class="divimagepic3"
-                            src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
-                            alt="Photohebergement" />
-                    </div>
-                    <div class="activmarstitle3">
-                        <h2>Îles du Frioul</h2>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="vignet4">
-            <a href="#">
-                <div class="divimage4">
-                    <img class="divimagepic4"
-                        src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
-                        alt="Photohebergement" />
-                </div>
-                <div class="activmarstitle4">
-                    <h2>Parc national des Calanques</h2>
-                </div>
-            </a>
-        </div>
-        <div class="vignetdoubl2">
-            <div class="vignet5">
-                <a href="#">
-                    <div class="divimage5">
-                        <img class="divimagepic5"
-                            src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
-                            alt="Photohebergement" />
-                    </div>
-                    <div class="activmarstitle5">
-                        <h2>Notre-Dame-de-la-Garde</h2>
-                    </div>
-                </a>
-            </div>
-            <div class="vignet6">
-                <a href="#">
-                    <div class="divimage6">
-                        <img class="divimagepic6"
-                            src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
-                            alt="Photohebergement" />
-                    </div>
-                    <div class="activmarstitle6">
-                        <h2>Parc Longchamp</h2>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-
-<!-- Zone du footer -->
-        
+            </section>
+        </main>
+        <!-- Zone du footer -->
         <footer>
             <div class="footer">
                 <h3>A propos</h3>
@@ -372,10 +333,5 @@
                 </ul>
             </div>
         </footer>
-
-
-
-
-        
     </body>
 </html>
