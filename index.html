@@ -15,13 +15,14 @@
 	<script src="https://kit.fontawesome.com/2f75277f0d.js" crossorigin="anonymous"></script>
 	</head>
     <body>
-        <!-- EN TÊTE ( header ) -->
+        <!-- HEADER avec NAV, zone de recherche et filtres -->
         <header id="header">
-            <nav>>
+            <div class="headerclock container">
                 <div class="navigation">
                     <div class="logo">
                         <a href="#" class="reservia"><img src="images/logo/Reservia.svg" alt="logo_Reservia" /></a>
                     </div>
+<!-- NAV -->
                     <nav>
                         <ul>
                             <div class="menu1">
@@ -34,20 +35,20 @@
                         </ul>
                     </nav>
                 </div>
-            </nav>
-            <!-- Zone de recherche ( bouton & filtres )-->    
-            <div class="rechercheetfiltre">
+            </div>
+            <!-- Zone de recherche -->    
+            <div class="rechercheetfiltre container">
                 <!-- bouton de recherche  -->
                <div class="searchbar">
                     <h1>Trouvez votre hébérgement pour des vacances de rêve</h1>
                     <p>En plein centre ville ou en pleine nature</p>
-                    <div>
+                    <div class="formu">
                         <form class="searchbar" action="/mon-action.php">
                             <button type="none"><i class="fas fa-map-marker-alt"></i></button>
                             <input type="text" name="recherche" placeholder="Marseille, France" name="location-search">                    
-                            <button type="submit">
-                                <p>Rechercher</p>
-                                <p><i class="fas fa-search"></i></p>
+                            <button class="buttonsearch" type="submit">
+                                <p class="buttontext1">Rechercher</p>
+                                <p class="buttontext2"><i class="fas fa-search"></i></p>
                             </button>
                         </form>
                     </div>
@@ -80,11 +81,11 @@
                 </div>
             </div>
         </header>
-        <!-- reservation -->
-        <!-- Zone " Hebergement à Marseille -->
+        <!-- MAIN avec 2 SECTIONS et 1 DIV -->
+        <!-- SECTION " Hebergement à Marseille -->
         <main>
             <section id="hebermars">
-                <div class="resermars">
+                <div class="resermars container">
                     <div class="classicmars">
                         <div class="pickbackground">
                             <h1>Hebergements à Marseille</h1>
@@ -165,7 +166,7 @@
                             <strong>Afficher plus</strong>
                         </div>
                     </div>
-                    <!-- Zone " Les plus populaires -->
+                    <!-- DIV " Les plus populaires -->
                     <div class="leplupop">
                         <div class="pickbackground">
                             <h1>
@@ -214,7 +215,7 @@
                     </div>
                 </div>
             </section>
-            <!-- Zone " Activités à Marseille -->
+            <!-- SECTION " Activités à Marseille -->
             <section id="activmars">
                 <div class="activmarsection">
                     <div class="pickbackground">
@@ -308,7 +309,7 @@
                 </div>
             </section>
         </main>
-        <!-- Zone du footer -->
+        <!-- FOOTER -->
         <footer>
             <div class="footer">
                 <h3>A propos</h3>
