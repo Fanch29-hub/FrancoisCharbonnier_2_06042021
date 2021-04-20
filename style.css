@@ -29,7 +29,7 @@ a {
 }
 
 a:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 h1 {
@@ -60,20 +60,21 @@ header .headerclock .navigation {
 
 
 .menu1 li.activite {
-    margin-top: 5px !important;
+    margin-top: 0px !important;
 }
 
-.sinscrire {
-    margin-top: 5px;
-}
+
 
 .hebergement {
-    text-align: center;
-    border-bottom: 3px solid #0065FC;
-    border-top: 0px solid #0065FC;
-    margin: 15px 0;
+    text-align: center; 
+    margin: px 0;
 }
 
+.hebergement:hover,
+.activite:hover,
+.inscription:hover{
+ border-top: 2px solid #0065FC;
+}
 
 
 header .headerclock .navigation nav,
@@ -88,7 +89,7 @@ header .headerclock .navigation nav ul {
 header .headerclock .navigation nav ul li:first-child,
 header .headerclock .navigation nav a.sinscrire {
     color: #0065FC;
-    margin-bottom: 0px;
+    margin-bottom: 2px;
 }
 
 header {
@@ -115,6 +116,13 @@ header {
     order: 1;
     flex: 0 1 100%;
 }
+
+
+header{
+margin-top: 30px;
+}
+
+
 
 
 /*Zone de recherche*/
