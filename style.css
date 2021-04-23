@@ -824,3 +824,102 @@ border-bottom: 3px solid #0065FC;
     }
 }
 
+#activmars {
+    font-size: 0.74em
+}
+
+
+
+
+@media(max-device-width: 992px) {
+.groupvignett	{
+display:flex;
+flex-direction:column;
+margin: auto;
+width:90%;
+}	
+
+}
+
+
+@media(max-device-width: 992px) {
+.groupdefigures	{
+display:flex;
+justify-content: space-around;
+margin: auto;
+width:90%;
+}	
+}
+	
+@media(max-device--width: 992px) {
+.vignet,
+.vignetdoubl
+{
+display:flex;
+flex-direction:column;
+margin: auto;
+width:90%;
+}
+}
+
+
+
+@media(max-device-width: 992px) {
+.vignet
+{
+    width:45%;
+}
+.vignetdoubl
+{
+    width:45%;
+}
+}
+
+
+
+
+
+
+
+@media(max-device-width: 768px) {
+.groupvignett	{
+display:flex;
+flex-direction:column;
+margin: auto;
+width:90%;
+}	
+
+}
+
+@media(max-device-width: 768px) {
+.groupdefigures	{
+display:flex;
+flex-direction:column;
+margin: auto;
+width:90%;
+}	
+}
+
+
+	
+@media(max-device-width: 768px) {
+.vignet,
+.vignetdoubl
+{
+display:flex;
+flex-direction:column;
+margin: auto;
+width:90%;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
