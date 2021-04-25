@@ -62,16 +62,13 @@ header .headerclock .navigation {
 }
 
 
-.menu1 li.activite {
-    margin-top: 0 px;
-}
+
 
 
 
 .hebergement {
     text-align: center; 
-    margin:  0 px;
-}
+   }
 
 .hebergement:hover,
 .activite:hover,
@@ -421,8 +418,8 @@ figure:hover {
     background: #FFF;
     border-radius: 20px;
     margin: 0 0 30px 0;
-    -webkit-box-shadow: 0 5px 40px -20px rgba(0, 0, 0, .75);
-    -moz-box-shadow: 0 5px 40px -20px rgba(0, 0, 0, .75);
+    box-shadow: 0 5px 40px -20px rgba(0, 0, 0, .75);
+    box-shadow: 0 5px 40px -20px rgba(0, 0, 0, .75);
     box-shadow: 0 5px 40px -20px rgba(0, 0, 0, .75);
 }
 
@@ -455,8 +452,8 @@ figure:hover {
     background: #FFF;
     border-radius: 20px;
     margin: 0 0 30px 0;
-    -webkit-box-shadow: 0 5px 40px -20px rgba(0, 0, 0, .75);
-    -moz-box-shadow: 0 5px 40px -20px rgba(0, 0, 0, .75);
+    box-shadow: 0 5px 40px -20px rgba(0, 0, 0, .75);
+    box-shadow: 0 5px 40px -20px rgba(0, 0, 0, .75);
     box-shadow: 0 5px 40px -20px rgba(0, 0, 0, .75);
     cursor: pointer;
     transition: transform .2s;
@@ -802,7 +799,7 @@ margin-top: 10px
     }
 }
 
-@media(max-device-width: 992px) {
+@media(max-width: 992px) {
 .hebergement:hover,
 .activite:hover,
 .inscription:hover{
@@ -810,7 +807,7 @@ margin-top: 10px
  	}
 }
 
-@media(max-device-width: 992px) {
+@media(max-width: 992px) {
 .hebergement:hover,
 .activite:hover{
 border-bottom: 3px solid #0065FC;
