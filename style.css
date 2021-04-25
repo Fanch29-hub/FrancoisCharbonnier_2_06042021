@@ -390,14 +390,16 @@ figure:hover {
 }
 
 
+
 /* SECTION "Activités à Marseille" */
 
 .adescript {
-    padding: 0px 0px 0px 20px;
+    padding: 0px 0px 0px 15px;
+    height:43px;
 }
 
 .didvtext {
-    padding: 0px 0px 0px 20px;
+    padding: 0px 0px 0px 15px;
 }
 
 .activmarsection .pickbackground h1 {
@@ -411,24 +413,8 @@ figure:hover {
     padding: 15px 15px;
 }
 
-#ActiviteAMarseille {
-    width: 70%;
-    margin-right: 25px;
-}
 
-#ActiviteAMarseille .pickbackground {
-    width: 35%;
-}
 
-#ActiviteAMarseille {
-    display: flex
-}
-
-#activmars ul {
-    list-style: none;
-    display: flex;
-    flex-flow: row wrap;
-}
 
 #activmars ul li {
     padding: 3px;
@@ -482,11 +468,14 @@ figure:hover {
 
 #activmars .groupdefigures .figure img {
     height: 100%;
-    max-height: 100px;
+    max-height: 115px;
     width: 100%;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
 }
+
+
+
 
 
 /* FOOTER */
@@ -727,9 +716,16 @@ margin-top: 10px
         margin: auto 0;
         border-bottom: 3px solid #99999960;
     }
-    @media(max-width: 992px) {
-        .hebergement {}
+     #activmars .groupvignett {
+        width: 100%;
+        display: flex;
+        flex-flow : column
     }
+  	  #activmars .groupdefigures {
+    	  width: 100%;
+    	  display: flex;
+    	  flex-flow : row
+    	  }
     .menu1 {
         position: absolute;
         width: 110%;
@@ -746,7 +742,29 @@ margin-top: 10px
         display: flex;
         flex-direction: column-reverse;
     }
+    .groupdefigures .groupvignett {
+        width: 100%;
+        display: flex;
+        flex-direction : column
+            }
+     #activmars .groupdefigures .vignet {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    order: 1;
+    flex: 0 1 45% ;
 }
+
+    #activmars .groupdefigures .vignetdoubl {
+    display: flex;
+    flex-direction: column;
+    order: 2;
+    flex: 0 1 45%;
+}
+#activmars .groupdefigures .figure {
+    width: 100%;
+   height: 100%;
+}}
 
 
 /*! HEADER */
@@ -817,7 +835,6 @@ border-bottom: 3px solid #0065FC;
     }
     #activmars .groupdefigures .vignet .figure .divimage,
     #activmars .groupdefigures .vignet .figure .divimage img {
-        height: 80%;
         max-height: initial;
         height: 92%;
         margin-bottom: -9%;
@@ -828,11 +845,8 @@ border-bottom: 3px solid #0065FC;
     font-size: 0.74em
 }
 
-
-
-
-@media(max-device-width: 992px) {
-.groupvignett	{
+@media(max-width: 768px) {
+#activmars .groupvignett	{
 display:flex;
 flex-direction:column;
 margin: auto;
@@ -841,58 +855,8 @@ width:90%;
 
 }
 
-
-@media(max-device-width: 992px) {
-.groupdefigures	{
-display:flex;
-justify-content: space-around;
-margin: auto;
-width:90%;
-}	
-}
-	
-@media(max-device--width: 992px) {
-.vignet,
-.vignetdoubl
-{
-display:flex;
-flex-direction:column;
-margin: auto;
-width:90%;
-}
-}
-
-
-
-@media(max-device-width: 992px) {
-.vignet
-{
-    width:45%;
-}
-.vignetdoubl
-{
-    width:45%;
-}
-}
-
-
-
-
-
-
-
-@media(max-device-width: 768px) {
-.groupvignett	{
-display:flex;
-flex-direction:column;
-margin: auto;
-width:90%;
-}	
-
-}
-
-@media(max-device-width: 768px) {
-.groupdefigures	{
+@media(max-width: 768px) {
+#activmars .groupdefigures	{
 display:flex;
 flex-direction:column;
 margin: auto;
@@ -902,24 +866,17 @@ width:90%;
 
 
 	
-@media(max-device-width: 768px) {
-.vignet,
-.vignetdoubl
+@media(max-width: 768px) {
+#activmars .vignet .vignetdoubl
 {
 display:flex;
 flex-direction:column;
 margin: auto;
 width:90%;
 }
+@media(max-width: 768px) {
+#activmars h1
+{margin-left: 10%;
 }
-
-
-
-
-
-
-
-
-
-
-
+}
+}
