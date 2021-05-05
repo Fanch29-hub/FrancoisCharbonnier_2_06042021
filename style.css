@@ -1,5 +1,4 @@
 
-
 body {
     margin: 0px;
     font-family: 'Raleway', sans-serif;
@@ -46,11 +45,6 @@ header .headerclock .navigation {
     flex-direction: row;
     justify-content: space-between;
 }
-
-
-
-
-
 
 .hebergement {
     text-align: center; 
@@ -106,7 +100,7 @@ header {
 
 
 
-/*Zone de recherche*/
+/*Recherche*/
 
 .rechercheetfiltre h1 {
     margin: 15px 0 0 0;
@@ -134,13 +128,10 @@ form.searchbar button[type="submit"] {
     padding: 0px 15px;
 }
 
-
 form.searchbar {
     display: flex;
     text-align: inherit;
 }
-
-
 
 form.searchbar input {
     background: transparent;
@@ -148,13 +139,10 @@ form.searchbar input {
     padding: 11px 5vw;
     margin-left: -4px;
     height: 20px;
+}
+p.buttontext2 {
+        display: none;
     }
-
-input::placeholder {
-  color: #000;
-  font-weight: bold;
-  opacity: 1}
-
 
 /*Filtres*/
 
@@ -250,10 +238,7 @@ p.nbrl {
 }
 
 
-/* main avec 2 SECTIONS et 1 DIV */
-
-
-/* SECTION "hebergemennts" et DIV "Les plus populaires */
+/* "hebergements" et "Les plus populaires */
 
 .leplupop .fastar {
     position: absolute;
@@ -279,13 +264,10 @@ figure:hover {
     margin-right: 3%;
 }
 
-
 #hebermars .leplupop {
     order: 2;
-    flex: 0 1 31%;
+    flex: 0 1 35%;
 }
-
-
 
 #hebermars .pickbackground {
     background: #F2F2F2;
@@ -296,16 +278,12 @@ figure:hover {
     height: 87%
 }
 
-
-
 #hebermars .pickbackground .groupdefigures {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     border-radius: 20px;
 }
-
-
 
 #hebermars .pickbackground .groupdefigures figure {
     width: calc(100% / 3.3);
@@ -317,7 +295,6 @@ figure:hover {
     cursor: pointer;
     transition: transform .2s;
 }
-
 
 #hebermars .pickbackground .groupdefigures figure figcaption {
     padding: 10px;
@@ -378,9 +355,7 @@ figure:hover {
     margin: auto 0;
 }
 
-
-
-/* SECTION "Activités à Marseille" */
+/* "Activités à Marseille" */
 
 .adescript {
     padding: 0px 0px 0px 15px;
@@ -391,8 +366,6 @@ figure:hover {
     padding: 0px 0px 0px 15px;
 }
 
-
-
 .activmarsection .groupvignett {
     list-style: none;
     display: flex;
@@ -402,8 +375,9 @@ figure:hover {
     padding-left: 0px
 }
 
-
-
+#activmars {
+    font-size: 0.9em
+}
 
 #activmars ul li {
     padding: 3px;
@@ -422,8 +396,6 @@ figure:hover {
     object-fit: cover;
     border-radius: 20px 20px 0 0;
 }
-
-
 
 #activmars .groupdefigures .vignet {
     display: flex;
@@ -463,10 +435,6 @@ figure:hover {
     border-radius: 20px 20px 0 0;
 }
 
-
-
-
-
 /* FOOTER */
 
 footer {
@@ -478,11 +446,10 @@ footer {
     display: flex;
 }
 
-
 .footer {
     padding: 20px;
     width: 100%;
-    padding-left: 4.5%;
+    padding-left: 10%;
 }
 
 ul.listapuce {
@@ -502,195 +469,32 @@ ul.listapuce {
 }
 
 
-
-
-
-
-
-
-
-
 /*! media querries version desktop */
 
-
-/*! balises générales */
 @media (min-width: 1200px) {
     .container {
         width: 90vw;
     }
-}
-
-/*! balises de la section "Activités à Marseille" */
-@media (min-width: 1200px) {
-    section#activmars {
+     section#activmars {
         width: 98vw;
         margin-left: auto;
         margin-right: auto;
     }
-}
-
-
-
-
-
-
-/*! media querries version smartphone */
-
-
-
-
-
-/*! balises générales */
-@media (max-width:768px) {
-    .container {
-        padding-right: 0px;
-        padding-left: 0px;
     }
-}
 
-
-
-/*! balises HEADER */
-@media (max-width:768px) {
-    header {
-        padding-left: 5%;
-        padding-right: 5%;
-        padding-top: 2.5%;
-    }
-}
-
-@media (max-width:768px) {
-.logo {
-margin-top: 10px
-	}
-}
-
-
-
-
-
-/*! balises "recherche" */
-
-
-
-@media (max-width:768px) {
-    form.searchbar button[type="submit"] {
-        border-radius: 15px 15px 15px 15px !important;
-        margin-left: -15px !important;
-        
-    }
-}
+/* media querries version tablette */
 
 @media (max-width:992px) {
+    body {
+        width: 100%;
+}
     p.buttontext1 {
         display: none;
     }
-}
-
-@media (min-width:992px) {
     p.buttontext2 {
-        display: none;
+        display: inherit;
     }
-}
-
-
-
-@media (max-width:768px) {
-	form.searchbar input {
-	width: 100%}
-	}
-@media (max-width:768px) {
-    form.searchbar {
-        display: flex;
-        text-align: center !important;
-  }
-}
-
-@media (max-width:768px) {
-    .rechercheetfiltre.container {
-        padding-right: 0px;
-        padding-left: 0px;
-    }
-}
-
-
-/*! balises "filtres" */
-
-
-
-
-/*! SECTION "Hébergements à Marseille" et DIV "Les plus populaires" */
-@media (max-width:768px) {
-    #hebermars .classicmars {
-        order: 1;
-        flex: 1;
-        margin-right: 0%;
-    }
-}
-
-
-@media (max-width:768px) {
-    #hebermars .leplupop {
-        order: 0;
-        flex: 0 1 100%;
-    }
-}
-
-
-@media (max-width:768px) {
-    #hebermars .pickbackground {
-        background: #F2F2F2;
-        border-radius: 0px !important;
-        padding: 30px 25px;
-        min-height: 519px;
-        margin-bottom: 0px;
-    }
-}
-
-
-@media (max-width:768px) {
-    #hebermars .pickbackground .groupdefigures {
-        flex-direction: column;
-    }
-}
-
-@media (max-width:768px) {
-    .classicmars .pickbackground {
-        background: white !important;
-    }
-}
-
-@media (max-width:768px) {
-    #hebermars .pickbackground {
-        flex-direction: column;
-    }
-}
-
-
-@media (max-width:768px) {
-    #hebermars .pickbackground .groupdefigures figure {
-        transform: scale(1.05);
-        width: auto;
-    }
-}
-
-
-
-/*! FOOTER */
-@media (max-width:768px) {
-    footer {
-        flex-flow: row wrap;
-    }
-}
-
-
-
-
-
-/*! media querries version tablette */
-
-/*! balises sur toute la page */
-@media(max-width: 992px) {
+    
     .headerclock {
         padding: 0;
         position: relative;
@@ -704,32 +508,29 @@ margin-top: 10px
         padding: 15px 0;
     }
     .hebergement {
-        text-align: center;
-        padding: 15px 0;
-        margin: inherit;
-        min-width: 50%;
-        margin: auto 0;
-        border-bottom: 3px solid #99999960;
+    text-align: center;
+    padding: 15px 0;
+    margin: inherit;
+    min-width: 50%;
+    margin: auto 0;
+        margin-bottom: auto;
+    border-bottom: 3px solid #99999960;
+}
+    .hebergement:hover, .activite:hover {
+    border-bottom: 3px solid #0065FC;
+}
+    .hebergement:hover, .activite:hover, .inscription:hover {
+    border-top: none;
     }
-     #activmars .groupvignett {
-        width: 100%;
-        display: flex;
-        flex-flow : column
-    }
-  	  #activmars .groupdefigures {
-    	  width: 100%;
-    	  display: flex;
-    	  flex-flow : row
-    	  }
-    .menu1 {
+       .menu1 {
         position: absolute;
         width: 110%;
+        margin-left: -5%;
         bottom: 0;
         left: 0;
         justify-content: space-between;
         align-content: center;
-        margin-left: -5%;
-    }
+           }
     .sinscrire {
         margin-left: -0%;
     }
@@ -740,58 +541,108 @@ margin-top: 10px
     .groupdefigures .groupvignett {
         width: 100%;
         display: flex;
-        flex-direction : column
-            }
-     #activmars .groupdefigures .vignet {
-    display: flex;
-    flex-direction: column;
-    align-content: space-between;
-    order: 1;
-    flex: 0 1 45% ;
+        flex-direction : column;
+    }
+    .hebergement:hover,
+    .activite:hover{
+border-bottom: 3px solid #0065FC;
+	}
+	 .activmarsection > div:nth-child(1) > h1:nth-child(1) {
+ margin-left: 3%;
 }
-
-    #activmars .groupdefigures .vignetdoubl {
-    display: flex;
-    flex-direction: column;
-    order: 2;
-    flex: 0 1 45%;
-}
-#activmars .groupdefigures .figure {
-    width: 100%;
-   height: 100%;
-}
-#hebermars .leplupop {
+    #hebermars .classicmars {
+        padding: 15px 0;
+        min-width: 50%;
+        margin-right: 0px;
+        border-bottom: 3px solid white;
+    }
+    #hebermars .leplupop {
     order: 0;
     flex: 0 1 100%;
 }
+  	 #hebermars .classicmars {
+margin-right: 0%;
+}
+    #activmars .groupvignett .groupdefigures .vignet .vignetdoubl {
+	display: flex;
+	flex-row: row-wrap;
+	}
+	 #activmars .groupvignett {
+        width: 100%;
+        display: flex;
+        flex-flow : column
+    }
+  	 #activmars .groupdefigures {
+    	  width: 100%;
+    	  display: flex;
+    	  flex-flow : row ;
+    	  margin: 20px ;
+    	  margin-left:0px;
+    	      	  }
+    #activmars .groupdefigures .vignet {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    order: 1;
+    flex: 1 1 20% ;
+}
+    #activmars .vignet .figure:nth-child(1) {
+width: 93% ;
+}
+    #activmars .adescript {
+    text-align: left;
+    padding: 0px;
+    }
+    #activmars .didvtext {
+    text-align: left;
+    padding: 0px;
+    }
+    #activmars .groupdefigures .vignetdoubl {
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    order: 2;
+    flex: 2 1 45%;
+}
+    #activmars .groupdefigures .figure {
+    width: 100%;
+   height: 80%;
+   padding: 0.3rem;
+  }
+    #activmars .vignetdoubl .figure:nth-child(1){
+width: calc(100%/2.4)
+}
+    #activmars .vignetdoubl .figure:nth-child(2){
+width: calc(100%/2.4);
+margin-right: 43px;
+padding-right: 5px;
+
+}
+    #activmars .groupvignett {
+	padding-left: 25px;
+   padding-right: 3%;
+}
 }
 
+/*min-width : 992px*/
 
-/*! HEADER */
 @media(min-width: 992px) {
-    .nav-hebergement {
+    .nav-hebergement {width: 100%;
+margin-left: 5%;
+
         text-align: center;
         border-top: 3px solid #0065FC;
         border-bottom: 0px solid #0065FC;
         margin: 15px 0;
     }
-}
-
-@media(min-width: 992px) {
     header .headerclock .navigation nav ul li {
         margin: 0 20px;
         padding-top: 20px;
     }
-}
-
-@media(min-width: 992px) {
     header .headerclock .navigation nav ul li {
         padding-top: 50px;
     }
-}
-
-
-@media(min-width: 992px) {
     header .headerclock .navigation nav,
     header .headerclock .navigation nav ul {
         margin-top: 0px;
@@ -800,54 +651,30 @@ margin-top: 10px
         display: flex;
         flex-flow: row wrap;
     }
-}
-
-@media(max-width: 992px) {
-.hebergement:hover,
-.activite:hover,
-.inscription:hover{
- border-top: none;
- 	}
-}
-
-@media(max-width: 992px) {
-.hebergement:hover,
-.activite:hover{
-border-bottom: 3px solid #0065FC;
-	}
-}
-
-
-/*! SECTIONS et DIV "les plus populaires" */
-@media(min-width: 992px) {
     #activmars .groupdefigures:nth-child(1) {
         width: 50%;
         display: flex;
         justify-content: flex-start     
     }
-     #activmars .groupdefigures:nth-child(2) {
+    #activmars .groupdefigures:nth-child(2) {
         width: 50%;
         display: flex;
         justify-content: flex-end        
     }
-    
-     #activmars .groupdefigures:nth-child(2) .vignetdoubl{
+    #activmars .groupdefigures:nth-child(2) .vignetdoubl{
          margin-right: 0;
          margin-bottom:auto;
          margin-left:auto;
          margin-top:auto; }
-     #activmars .groupdefigures:nth-child(1) .vignetdoubl{
+    #activmars .groupdefigures:nth-child(1) .vignetdoubl{
          margin:auto; }
-         
-     #activmars .groupdefigures:nth-child(1) .vignet{
+    #activmars .groupdefigures:nth-child(1) .vignet{
          margin-left: 0;
          margin-bottom:auto;
          margin-right: :auto;
          margin-top:auto;}
-         
-     #activmars .groupdefigures:nth-child(2) .vignet{
+    #activmars .groupdefigures:nth-child(2) .vignet{
          margin:auto; }
-          
     #activmars .groupdefigures .vignetdoubl,
     #activmars .groupdefigures .vignet {
         max-width: 45%;
@@ -865,84 +692,122 @@ border-bottom: 3px solid #0065FC;
     }
 }
 
-#activmars {
-    font-size: 0.9em
-}
-
+/* Media queries smartphone*/
 
 @media(max-width: 768px) {
+.container {
+        padding-right: 0px;
+        padding-left: 0px;
+}
+header {
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 2.5%;
+}
+
+.footer {
+padding-left: 5% !important;
+}
+
+.formfilter, .formfilter .formcontenu  {
+	justify-content : space-between;
+}
+.formfilter .button {
+    margin-right: 0;
+}
+.logo {
+margin-top: 10px
+	}
+form.searchbar button[type="submit"] {
+        border-radius: 15px 15px 15px 15px !important;
+        margin-left: -15px !important;
+}
+.classicmars .pickbackground {
+background: white !important;
+ }
+form.searchbar input {
+width: 100%
+}
+form.searchbar {
+display: flex;
+text-align: center !important;
+}
+.rechercheetfiltre.container {
+padding-right: 0px;
+padding-left: 0px;
+}
+#hebermars .pickbackground {
+        background: #F2F2F2;
+        border-radius: 0px !important;
+        padding: 30px 25px;
+        min-height: 519px;
+        margin-bottom: 0px;
+    }
+#hebermars .leplupop {
+order: 0;
+flex: 0 1 100%;
+}
+#hebermars .pickbackground .groupdefigures {
+flex-direction: column;
+}
+#hebermars .pickbackground {
+flex-direction: column;
+padding-left: 5%;
+padding-right: 5%;
+}
+#hebermars .pickbackground .groupdefigures figure {
+transform: scale(1.05);
+width: auto;
+margin-right: 2%;
+margin-left: 2%;
+}
+#hebermars .classicmars {
+order: 1;
+flex: 1;
+margin-right: 0%;
+}
+
+#activmars .pickbackground {
+padding-right: 5%;
+padding-left: 5%
+}
+
+.activmarsection > div:nth-child(1) > h1:nth-child(1) {
+	margin-left: 0;
+}
+
 #activmars .groupdefigures	{
 display:flex;
 flex-direction:column;
-width: 98vw;
+width: 100%;
 margin-left: auto;
 margin-right: auto;
-
-
 }	
-}
 
-
-	
-
-
-
-}
-
-
-
-@media(max-width: 768px) {
-#hebermars h1
-{margin-left: -2.5%;
-}	
-#activmars h1
-{margin-left: 2.5%;
-}
-}
-}
-
-
-@media(max-width: 992px) {
-#hebermars .classicmars {
-margin-right: 0%;
-}
-}
-
-@media(max-width: 768px) {
-.fachart
-{margin-right:-2.5%;
-}
-}
-
-
-
-
-
-
-
-
-
-
-@media(max-width: 768px) {
 #activmars .vignet {
-width:98%;
-margin: auto;
+width:100%;
+margin: 0;
 }
+#activmars .groupvignett {
+padding-left: 0px;
+padding-right: 0px;
 }
-
-
-@media(max-width: 768px) {
+#activmars .groupdefigures .vignet {
+justify-content: center !important;
+margin: auto !important;}
+#activmars .vignetdoubl .figure {
+width: 100% !important;
+margin-right: 0 !important;
+}
+#activmars .vignet .figure {
+width: 100% !important;
+margin-right: 0 !important;
+}
 #activmars .vignetdoubl {
-width:98%;
+width:100%;
 margin: auto;
 }
+footer {
+flex-flow: row wrap;
 }
-
-
-
-
-
-
-
-
-
+}
