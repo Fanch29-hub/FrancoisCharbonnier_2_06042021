@@ -110,7 +110,7 @@ header {
 
 form.searchbar button[type="reset"] {
     background: #F2F2F2;
-    border: 1px #F2F2F2 solid;
+    border: none;
     padding: 5px 15px;
     font-size: 20px;
     border-radius: 15px 0 0 15px;
@@ -121,7 +121,7 @@ form.searchbar button[type="reset"] {
 form.searchbar button[type="submit"] {
     display: flex;
     background: #0065FC;
-    border: 1px #0065FC solid;
+    border: none;
     border-radius: 0 15px 15px 0;
     color: #FFF;
     height: 43px;
@@ -565,7 +565,7 @@ margin-right: 0%;
 }
     #activmars .groupvignett .groupdefigures .vignet .vignetdoubl {
 	display: flex;
-	flex-row: row-wrap;
+	flex-wrap:wrap;
 	}
 	 #activmars .groupvignett {
         width: 100%;
@@ -671,7 +671,7 @@ margin-left: 5%;
     #activmars .groupdefigures:nth-child(1) .vignet{
          margin-left: 0;
          margin-bottom:auto;
-         margin-right: :auto;
+         margin-right: auto;
          margin-top:auto;}
     #activmars .groupdefigures:nth-child(2) .vignet{
          margin:auto; }
