@@ -37,13 +37,19 @@ h1 {
 /*! HEADER" */
 
 .logo {
-margin-top: 50px}
+margin-top: 50px;
+align-items: flex-end;
+display: flex;
+}
 
 
 header .headerclock .navigation {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+div.sinscrire  ul:nth-child(1) {
+ padding-left: 0px;
 }
 
 .hebergement {
@@ -62,7 +68,31 @@ header .headerclock .navigation nav ul {
     flex-direction: row;
     list-style: none;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row-reverse;
+    align-items: flex-end;
+}
+
+.navigation nav:nth-child(2) ul:nth-child(1) {
+ margin-bottom: 0px;
+ display: flex;
+ justify-content: space-between;
+ padding-left: 0px;
+ width: 100%;
+}
+
+.inscription {
+display: flex;
+justify-content: flex-end;
+}
+
+.hebergement {
+ display: flex;
+ justify-content: center;
+}
+
+.activite {
+ display: flex;
+ justify-content: center ;
 }
 
 
@@ -89,11 +119,11 @@ header {
 .hebergement,
 .activite {
     order: 2;
-    flex: 0 1
+    flex: 0 1 100%;
 }
 
 .inscription {
-    order: 1;
+    order: 3;
     flex: 0 1 100%
      }
 
@@ -122,10 +152,20 @@ form.searchbar button[type="submit"] {
     display: flex;
     background: #0065FC;
     border: none;
-    border-radius: 0 15px 15px 0;
+    border-radius: 15px 15px 15px 15px;
     color: #FFF;
     height: 43px;
     padding: 0px 15px;
+    margin-left: -10px;
+}
+form.searchbar button:nth-child(3){
+align-items: center;
+justify-content:center;
+}
+
+form.searchbar button:nth-child(4){
+align-items: center;
+justify-content:center;
 }
 
 form.searchbar {
@@ -137,7 +177,7 @@ form.searchbar input {
     background: transparent;
     border: 1px #F2F2F2 solid;
     padding: 11px 5vw;
-    margin-left: -4px;
+    margin-left: -15px;
     height: 20px;
 }
 p.buttontext2 {
@@ -188,9 +228,6 @@ p.buttontext2 {
     transform: scale(1.05);
 }
 
-.formfilter .button:first-child {
-    margin-left: 0;
-}
 
 .formfilter .button:last-child {
     margin-right: 0;
@@ -207,7 +244,7 @@ p.buttontext2 {
     border-radius: 100%;
 }
 
-.button p {
+.button {
     margin: auto;
 }
 
@@ -355,6 +392,13 @@ figure:hover {
     margin: auto 0;
 }
 
+.titre {
+ flex-wrap: nowrap;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
 /* "Activités à Marseille" */
 
 .adescript {
@@ -397,13 +441,6 @@ figure:hover {
     border-radius: 20px 20px 0 0;
 }
 
-#activmars .groupdefigures .vignet {
-    display: flex;
-    flex-direction: column;
-    order: 1;
-    flex: 1;
-}
-
 #activmars .groupdefigures .vignetdoubl {
     display: flex;
     flex-direction: column;
@@ -421,6 +458,9 @@ figure:hover {
     box-shadow: 0 5px 40px -20px rgba(0, 0, 0, .75);
     cursor: pointer;
     transition: transform .2s;
+}
+#activmars .groupdefigures .vignetdoubl .figure:nth-child(2) {
+margin-bottom: 0;
 }
 
 #activmars .groupdefigures .figure:hover {
@@ -449,7 +489,7 @@ footer {
 .footer {
     padding: 20px;
     width: 100%;
-    padding-left: 10%;
+    padding-left: 5%;
 }
 
 ul.listapuce {
@@ -471,15 +511,39 @@ ul.listapuce {
 
 /*! media querries version desktop */
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
     .container {
         width: 90vw;
     }
+.formfilter .button:first-child {
+    margin-left: 0;
+}
+    
      section#activmars {
         width: 98vw;
         margin-left: auto;
         margin-right: auto;
     }
+   form.searchbar button:nth-child(3) {
+        display: inherit; ;
+    }
+   form.searchbar button:nth-child(4) {
+        display: none;
+    }
+    .hebergement:hover,
+    .activite:hover{
+border-bottom:none;
+ padding-top:68px;
+	}
+	.inscription:hover{
+ border-bottom:none;
+ padding-top:68px;
+	}
+	.hebergement, .activite, .inscription {
+	padding-top: 70px;
+	justify-content: center;
+}
+	
     }
 
 /* media querries version tablette */
@@ -488,10 +552,22 @@ ul.listapuce {
     body {
         width: 100%;
 }
-    p.buttontext1 {
-        display: none;
+.formfilter .button {
+margin: 2%;
+margin-left: 0
+
+}
+
+.logo {
+position: absolute;
+margin-top: 0;
+}
+
+
+   form.searchbar button:nth-child(3) {
+        display: none ;
     }
-    p.buttontext2 {
+   form.searchbar button:nth-child(4) {
         display: inherit;
     }
     
@@ -501,21 +577,28 @@ ul.listapuce {
         padding-bottom: 56px;
     }
     .activite {
-        text-align: center;
-        border-bottom: 3px solid #99999960;
-        min-width: 50%;
-        margin: auto 0;
-        padding: 15px 0;
-    }
+       text-align: center;
+    padding-top: 50px;
+    margin: 0;
+    border-bottom: 3px solid #99999960;
+    order: 2;
+flex: 0 1 50%
+}
     .hebergement {
     text-align: center;
-    padding: 15px 0;
-    margin: inherit;
-    min-width: 50%;
-    margin: auto 0;
-        margin-bottom: auto;
+    padding-top: 50px;
+    margin: 0;
     border-bottom: 3px solid #99999960;
+    order: 2;
+flex: 0 1 50%
 }
+ol{
+display: flex;
+flex-wrap: wrap-reverse;
+width: 100%;
+padding: 0;
+}
+
     .hebergement:hover, .activite:hover {
     border-bottom: 3px solid #0065FC;
 }
@@ -523,21 +606,32 @@ ul.listapuce {
     border-top: none;
     }
        .menu1 {
-        position: absolute;
         width: 110%;
         margin-left: -5%;
         bottom: 0;
         left: 0;
         justify-content: space-between;
-        align-content: center;
+        align-content: flex-end;
            }
     .sinscrire {
+        display: flex;
+        justify-content: flex-end;
         margin-left: -0%;
     }
     header .headerclock .navigation nav ul {
         display: flex;
-        flex-direction: column-reverse;
-    }
+        flex-direction: row;
+       }
+    header .headerclock .navigation nav,
+header .headerclock .navigation nav {
+    flex-direction: row;
+    list-style: none;
+    display: flex;
+    flex-flow: column-reverse;
+    width: 100%;
+    align-items: center;   
+}
+
     .groupdefigures .groupvignett {
         width: 100%;
         display: flex;
@@ -636,6 +730,9 @@ margin-left: 5%;
         border-bottom: 0px solid #0065FC;
         margin: 15px 0;
     }
+    .navigation nav {
+    width: 33%}
+    
     header .headerclock .navigation nav ul li {
         margin: 0 20px;
         padding-top: 20px;
@@ -646,11 +743,27 @@ margin-left: 5%;
     header .headerclock .navigation nav,
     header .headerclock .navigation nav ul {
         margin-top: 0px;
-        flex-direction: row;
         list-style: none;
         display: flex;
-        flex-flow: row wrap;
+        flex-flow: nowrap;
+        align-items: flex-start;
     }
+    ol {
+  	display: flex;
+	align-content: flex-start;
+	margin-top: 0px;
+}
+    .hebergement:hover, .activite:hover {
+    border-bottom: none;}
+    
+  .navigation nav:nth-child(2) ol:nth-child(1) {
+ display: flex;
+ width: 100%;
+ justify-content: space-between;
+ padding-left: 0px;
+}
+
+
     #activmars .groupdefigures:nth-child(1) {
         width: 50%;
         display: flex;
@@ -718,10 +831,10 @@ padding-left: 5% !important;
 .logo {
 margin-top: 10px
 	}
-form.searchbar button[type="submit"] {
-        border-radius: 15px 15px 15px 15px !important;
-        margin-left: -15px !important;
-}
+ol {
+	 width: 110%;
+	 }
+
 .classicmars .pickbackground {
 background: white !important;
  }
