@@ -142,7 +142,7 @@ form.searchbar button[type="reset"] {
     background: #F2F2F2;
     border: none;
     padding: 5px 15px;
-    font-size: 20px;
+    font-size: 19px;
     border-radius: 15px 0 0 15px;
     padding-top: 7px;
     padding-bottom: 10px;
@@ -156,7 +156,7 @@ form.searchbar button[type="submit"] {
     color: #FFF;
     height: 43px;
     padding: 0px 15px;
-    margin-left: -10px;
+    margin-left: -15px;
 }
 form.searchbar button:nth-child(3){
 align-items: center;
@@ -172,14 +172,18 @@ form.searchbar {
     display: flex;
     text-align: inherit;
 }
-
+input::placeholder {
+  color: #000;
+  font-weight: bold;
+  opacity: 1;}
+  
 form.searchbar input {
     background: transparent;
     border: 1px #F2F2F2 solid;
     padding: 11px 5vw;
-    margin-left: -15px;
-    height: 20px;
-}
+    height: 19px;
+    }
+
 p.buttontext2 {
         display: none;
     }
@@ -416,7 +420,7 @@ figure:hover {
     display: flex;
     flex-flow: row wrap;
     padding-top: 15px;
-    padding-bottom: 15px;
+    padding-bottom: 60px;
     padding-left: 0px
 }
 
@@ -515,7 +519,7 @@ ul.listapuce {
 .formfilter .button:first-child {
     margin-left: 0;
 }
-    
+
      section#activmars {
         width: 98vw;
         margin-left: auto;
@@ -555,9 +559,13 @@ margin-left: 0
 
 }
 
+.sinscrire {
+padding-right: 5%}
+
 .logo {
 position: absolute;
 margin-top: 0;
+padding-left: 5%;
 }
 
 
@@ -584,6 +592,7 @@ flex: 0 1 50%
     .hebergement {
     text-align: center;
     padding-top: 50px;
+    padding-bottom: 10px;
     margin: 0;
     border-bottom: 3px solid #99999960;
     order: 2;
@@ -683,10 +692,12 @@ width: 93% ;
     #activmars .adescript {
     text-align: left;
     padding: 0px;
+    padding-left: 20px;
     }
     #activmars .didvtext {
     text-align: left;
     padding: 0px;
+    padding-left: 20px;
     }
     #activmars .groupdefigures .vignetdoubl {
     display: flex;
@@ -813,7 +824,9 @@ header {
         padding-right: 5%;
         padding-top: 2.5%;
 }
-
+.sinscrire {
+	margin-right: 30px;
+}
 .footer {
 padding-left: 5% !important;
 }
